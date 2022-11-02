@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'root/index'
+
+  # API routes
+  resources :greetings
 
   # Defines the root path route ("/")
   root "root#index"
