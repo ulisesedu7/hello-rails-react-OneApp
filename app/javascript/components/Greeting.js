@@ -5,7 +5,6 @@ import { getGreeting } from "../redux/greetingsReducer";
 const Greeting = () => {
   const dispatch = useDispatch();
   const { greeting } = useSelector((state) => state.greeting);
-  console.log(greeting);
 
   useEffect(() => {
     dispatch(getGreeting());
@@ -13,7 +12,8 @@ const Greeting = () => {
 
   return (
     <section>
-      <h2>{ greeting }</h2>
+      <h1>Hi Everyone</h1>
+      <p>{ greeting }</p>
     </section>
   );
 }

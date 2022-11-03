@@ -1,12 +1,13 @@
 import React from "react";
+import { Routes, Route } from 'react-router-dom';
+
 import Greeting from "./components/Greeting.js";
 
 const App = () => {
   return (
-    <main>
-      <h1>Hello Everyone</h1>
-      <Greeting />
-    </main>
+    <Routes>
+      <Route exact path="/" element={<Greeting />} />
+    </Routes>
   );
 };
 
