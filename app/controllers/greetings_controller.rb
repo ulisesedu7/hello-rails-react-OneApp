@@ -4,5 +4,4 @@ class GreetingsController < ApplicationController
 
     render json: @greeting
   end
-
 end
